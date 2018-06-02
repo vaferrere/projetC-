@@ -60,6 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{7CA1238A-A804-4FB7-80A8-7B36F47EC8EC}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Metier\Metier.csproj">
       <Project>{6C8565FF-038D-4613-8391-3DB513575E01}</Project>
       <Name>Metier</Name>

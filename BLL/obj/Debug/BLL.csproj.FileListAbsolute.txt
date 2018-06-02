@@ -1,0 +1,13 @@
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/BLL/obj/Debug/BLL.csproj.CoreCompileInputs.cache
+U:\C#\Omazone.Vincent.Ferrere\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\BLL.dll.config
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\BLL.dll
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\BLL.pdb
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\EntityFramework.dll
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\EntityFramework.SqlServer.dll
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\Metier.dll
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\Metier.pdb
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\EntityFramework.xml
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\EntityFramework.SqlServer.xml
+U:\C#\Omazone.Vincent.Ferrere\BLL\obj\Debug\BLL.dll
+U:\C#\Omazone.Vincent.Ferrere\BLL\obj\Debug\BLL.pdb

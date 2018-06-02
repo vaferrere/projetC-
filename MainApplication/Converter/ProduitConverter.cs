@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MainApplication.Converter
 {
-    class ProduitConverter
+    public static class ProduitConverter
     {
         public static ProduitViewModel ProduitToProduitViewModel(Produit produit)
         {

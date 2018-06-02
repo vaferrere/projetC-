@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MainApplication.ViewModels
 {
-    class ProduitViewModel : BaseViewModel
+    public class ProduitViewModel : BaseViewModel
     {
         private int id;
         public int Id { get { return id; } set { id = value; } }
@@ -33,6 +33,6 @@ namespace MainApplication.ViewModels
         private Categorie categorie;
         public Categorie Categorie { get { return categorie; } set { categorie = value; } }
 
-        public ProduitViewModel(){}   
+        public ProduitViewModel(){}
     }
 }

@@ -1,4 +1,5 @@
-﻿using Metier.Entities;
+﻿using BLL;
+using Metier.Entities;
 using Metier.FluentEntitites;
 using System;
 using System.Collections.Generic;
@@ -14,39 +15,23 @@ namespace VueConsole
         {
             try
             {
-                ContextFluent context = new ContextFluent();
+                Categorie categorie = new Categorie("Champignon", true);
 
-                Statut statut = new Statut();
-                statut.Libelle = "Ma liste";
+                Produit produit = new Produit(1, "Champignon", "Champignon de Paris", true, 7, 0.50, categorie);
 
-                Client client = new Client();
-                client.Nom = "Vincent";
-                client.Prenom = "Mathieu";
-                client.Actif = true;
-
-                Commande commande = new Commande();
-                commande.DateCommande = DateTime.Now;
-                commande.Observation = "vive le c#";
-                commande.Status = statut;
-                commande.Client = client;
-
-                context.Commandes.Add(commande);
-                context.SaveChanges();
-
-                List<Statut> statuts = context.Statuts.ToList();
-
-                foreach (Statut mStatut in statuts)
+                Manager manager = new Manager();
+                manager.AjouterProduit(produit);
+                List<Produit> listeProduits = manager.GetAllProduit();
+                foreach (Produit p in listeProduits)
                 {
-                    Console.WriteLine(String.Format("\nL'id de ce status est : {0} et son libelle: {1}", mStatut.Id, mStatut.Libelle));
+                    Console.WriteLine($"Libelle : {p.Libelle}\nCatégorie : {p.CategorieId}\n");
                 }
-
-                Console.WriteLine("\nhey\n");
                 Console.ReadLine();
             }
             catch (Exception ex)
             {
-
-                throw;
+                Console.WriteLine("ta mere la pute");
+                Console.ReadLine();
             }
 
         }

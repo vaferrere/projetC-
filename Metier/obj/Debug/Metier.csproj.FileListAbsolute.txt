@@ -1,6 +1,16 @@
-U:\C#\Omazone.Vincent.Ferrere\Metier\obj\Debug\Metier.csprojResolveAssemblyReference.cache
-U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\Bdd.mdf
-U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\Bdd_log.ldf
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/Bdd.mdf
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/Bdd_log.ldf
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/Metier.dll.config
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/Metier.dll
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/Metier.pdb
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/EntityFramework.dll
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/EntityFramework.SqlServer.dll
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/EntityFramework.xml
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/bin/Debug/EntityFramework.SqlServer.xml
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/obj/Debug/Metier.csprojResolveAssemblyReference.cache
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/obj/Debug/Metier.csproj.CoreCompileInputs.cache
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/obj/Debug/Metier.dll
+/Volumes/vaferrere1/C#/Omazone.Vincent.Ferrere/Metier/obj/Debug/Metier.pdb
 U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\Metier.dll.config
 U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\Metier.dll
 U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\Metier.pdb
@@ -8,5 +18,6 @@ U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\EntityFramework.dll
 U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\EntityFramework.SqlServer.dll
 U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\EntityFramework.xml
 U:\C#\Omazone.Vincent.Ferrere\Metier\bin\Debug\EntityFramework.SqlServer.xml
+U:\C#\Omazone.Vincent.Ferrere\Metier\obj\Debug\Metier.csprojResolveAssemblyReference.cache
 U:\C#\Omazone.Vincent.Ferrere\Metier\obj\Debug\Metier.dll
 U:\C#\Omazone.Vincent.Ferrere\Metier\obj\Debug\Metier.pdb

@@ -17,5 +17,17 @@ namespace Metier.Entities
         public double Prix { get; set; }
         public int CategorieId { get; set; }
         public Categorie Categorie { get; set; }
+
+        public Produit() {}
+        public Produit(int code, string libelle, string description, bool actif, int stock, double prix, Categorie categorie)
+        {
+            Code = code;
+            Libelle = libelle;
+            Description = description;
+            Actif = actif;
+            Stock = stock;
+            Prix = prix;
+            Categorie = categorie;
+        }
     }
 }
