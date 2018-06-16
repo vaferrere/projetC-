@@ -1,4 +1,5 @@
-﻿using Metier.Entities;
+﻿using BLL;
+using Metier.Entities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -34,6 +35,7 @@ namespace MainApplication.ViewModels
 
         public ListeProduitViewModel()
         {
+            Manager manager = new Manager();
             listeProduit = new ObservableCollection<ProduitViewModel>();
 
             Categorie mCategorie = new Categorie();
@@ -52,7 +54,7 @@ namespace MainApplication.ViewModels
             mProduitViewModel.Description = "je suis un objet de test";
 
             listeProduit.Add(mProduitViewModel);
-
+            manager.AjouterProduit(Converter.ProduitConverter.ProduitViewModelToProduit(mProduitViewModel));
             mCategorie = new Categorie();
             mCategorie.Actif = true;
             mCategorie.Id = 0;
@@ -69,6 +71,7 @@ namespace MainApplication.ViewModels
             mProduitViewModel.Description = "je suis un objet de test2";
 
             listeProduit.Add(mProduitViewModel);
+            manager.AjouterProduit(Converter.ProduitConverter.ProduitViewModelToProduit(mProduitViewModel));
         }
 
     }

@@ -19,8 +19,15 @@ namespace BLL.Commands
 
         public int Ajouter(Produit produit)
         {
-            contexte.Produits.Add(produit);
-            return contexte.SaveChanges();
+            try
+            {
+                contexte.Produits.Add(produit);
+                return contexte.SaveChanges();
+            } catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return -1;
+            }
         }
 
         public void Modifier(Produit produit)

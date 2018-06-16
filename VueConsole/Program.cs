@@ -15,22 +15,25 @@ namespace VueConsole
         {
             try
             {
-                Categorie categorie = new Categorie("Champignon", true);
+                ContextFluent context = new ContextFluent();
+                Produit p = new Produit(452, "je suis le produit", "je suis la description", true, 45, 0.45, new Categorie("dat cat", true));
+                context.Produits.Add(p);
+                context.SaveChanges();
+                List<Produit> list = context.Produits.ToList();
 
-                Produit produit = new Produit(1, "Champignon", "Champignon de Paris", true, 7, 0.50, categorie);
-
-                Manager manager = new Manager();
-                manager.AjouterProduit(produit);
-                List<Produit> listeProduits = manager.GetAllProduit();
-                foreach (Produit p in listeProduits)
+                foreach (Produit c in list)
                 {
-                    Console.WriteLine($"Libelle : {p.Libelle}\nCatégorie : {p.CategorieId}\n");
+                    Console.WriteLine("yo:");
+                    Console.WriteLine(c.Libelle);
+                    Console.WriteLine(c.Categorie.Libelle);
                 }
+
+                Console.WriteLine("c'est ok!");
                 Console.ReadLine();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("ta mere la pute");
+                Console.WriteLine("il y a une erreur");
                 Console.ReadLine();
             }
 

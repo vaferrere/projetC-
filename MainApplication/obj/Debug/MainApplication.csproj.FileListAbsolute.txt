@@ -12,8 +12,6 @@ U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\MainApplication.Properti
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\MainApplication.csproj.GenerateResource.Cache
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\MainApplication.exe
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\MainApplication.pdb
-U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\Bdd.mdf
-U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\Bdd_log.ldf
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\EntityFramework.dll
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\EntityFramework.SqlServer.dll
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\Metier.dll
@@ -25,3 +23,7 @@ U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\Views\ListeProduit.g.cs
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\Views\DetailProduit.baml
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\obj\Debug\Views\ListeProduit.baml
+U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\BLL.dll
+U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\BLL.pdb
+U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\Bdd.mdf
+U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\Bdd_log.ldf

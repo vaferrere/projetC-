@@ -12,7 +12,7 @@ namespace Metier.FluentEntitites
     {
         public ContextFluent() : base("dbOmazone")
         {
-            Database.SetInitializer<ContextFluent>(new DropCreateDatabaseIfModelChanges<ContextFluent>());
+            //Database.SetInitializer<ContextFluent>(new DropCreateDatabaseIfModelChanges<ContextFluent>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -125,6 +125,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{7CA1238A-A804-4FB7-80A8-7B36F47EC8EC}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Metier\Metier.csproj">
       <Project>{6c8565ff-038d-4613-8391-3db513575e01}</Project>
       <Name>Metier</Name>

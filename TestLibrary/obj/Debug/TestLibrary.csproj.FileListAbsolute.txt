@@ -1,0 +1,7 @@
+U:\C#\Omazone.Vincent.Ferrere\TestLibrary\bin\Debug\TestLibrary.dll
+U:\C#\Omazone.Vincent.Ferrere\TestLibrary\bin\Debug\TestLibrary.pdb
+U:\C#\Omazone.Vincent.Ferrere\TestLibrary\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+U:\C#\Omazone.Vincent.Ferrere\TestLibrary\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+U:\C#\Omazone.Vincent.Ferrere\TestLibrary\obj\Debug\TestLibrary.csprojResolveAssemblyReference.cache
+U:\C#\Omazone.Vincent.Ferrere\TestLibrary\obj\Debug\TestLibrary.dll
+U:\C#\Omazone.Vincent.Ferrere\TestLibrary\obj\Debug\TestLibrary.pdb

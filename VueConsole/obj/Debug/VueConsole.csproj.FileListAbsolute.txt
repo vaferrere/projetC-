@@ -28,3 +28,5 @@ U:\C#\Omazone.Vincent.Ferrere\VueConsole\bin\Debug\BLL.pdb
 U:\C#\Omazone.Vincent.Ferrere\VueConsole\bin\Debug\Metier.pdb
 U:\C#\Omazone.Vincent.Ferrere\VueConsole\bin\Debug\EntityFramework.xml
 U:\C#\Omazone.Vincent.Ferrere\VueConsole\bin\Debug\EntityFramework.SqlServer.xml
+U:\C#\Omazone.Vincent.Ferrere\VueConsole\bin\Debug\Bdd.mdf
+U:\C#\Omazone.Vincent.Ferrere\VueConsole\bin\Debug\Bdd_log.ldf

@@ -17,9 +17,9 @@ namespace BLL.Queries
             this.contexte = contexte;
         }
 
-        public IQueryable<Produit> GetAll()
+        public List<Produit> GetAll()
         {
-            return contexte.Produits;
+            return contexte.Produits.ToList();
         }
 
         public IQueryable<Produit> GetById(int id)
