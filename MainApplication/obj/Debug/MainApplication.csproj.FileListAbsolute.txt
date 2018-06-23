@@ -27,3 +27,5 @@ U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\BLL.dll
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\BLL.pdb
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\Bdd.mdf
 U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\Bdd_log.ldf
+U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\BDDTests.mdf
+U:\C#\Omazone.Vincent.Ferrere\MainApplication\bin\Debug\BDDTests_log.ldf

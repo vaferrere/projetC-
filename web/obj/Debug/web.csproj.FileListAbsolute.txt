@@ -107,3 +107,5 @@ U:\C#\Omazone.Vincent.Ferrere\web\bin\MainApplication.exe
 U:\C#\Omazone.Vincent.Ferrere\web\bin\MainApplication.pdb
 U:\C#\Omazone.Vincent.Ferrere\web\bin\Bdd.mdf
 U:\C#\Omazone.Vincent.Ferrere\web\bin\Bdd_log.ldf
+U:\C#\Omazone.Vincent.Ferrere\web\bin\BDDTests.mdf
+U:\C#\Omazone.Vincent.Ferrere\web\bin\BDDTests_log.ldf

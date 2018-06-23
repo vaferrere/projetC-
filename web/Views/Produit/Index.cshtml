@@ -6,9 +6,26 @@
 
 <h2>Liste des produits</h2>
 
-<ul>
+<table>
+    <th>
+        <td>Code</td>
+        <td>Libelle</td>
+        <td>Description</td>
+        <td>Prix</td>
+        <td>Stock</td>
+    </th>
 @foreach (var produit in Model)
 {
-    <li>@produit.Libelle</li>
+    if (produit.Actif == true)
+    {
+        <tr>
+            <td>@produit.Code</td>
+            <td>@produit.Libelle</td>
+            <td>@produit.Description</td>
+            <td>@produit.Prix</td>
+            <td>@produit.Stock</td>
+        </tr>
+    }
+
 }
-</ul>
+</table>

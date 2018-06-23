@@ -12,7 +12,7 @@ namespace BLL
 {
     public class Manager
     {
-        private readonly ContextFluent contexte;
+        private ContextFluent contexte;
         private static Manager manager = null;
 
         public Manager()
@@ -70,6 +70,21 @@ namespace BLL
         {
             CategorieQuery pq = new CategorieQuery(contexte);
             return pq.GetAll().ToList();
+        }
+
+        public void PurgeDatabase()
+        {
+            CategorieCommand catC = new CategorieCommand(contexte);
+            ClientCommand cliC    = new ClientCommand(contexte);
+            CommandeCommand comC  = new CommandeCommand(contexte);
+            ProduitCommand proC   = new ProduitCommand(contexte);
+            StatutCommand staC    = new StatutCommand(contexte);
+
+            catC.Purge();
+            cliC.Purge();
+            comC.Purge();
+            proC.Purge();
+            staC.Purge();
         }
     }
 }

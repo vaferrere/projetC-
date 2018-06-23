@@ -60,5 +60,10 @@ namespace BLL.Commands
 
             contexte.SaveChanges();
         }
+
+        public void Purge()
+        {
+            contexte.Database.ExecuteSqlCommand("delete from APP_PRODUIT");
+        }
     }
 }
