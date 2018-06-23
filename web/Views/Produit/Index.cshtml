@@ -6,9 +6,22 @@
 
 <h2>Liste des produits</h2>
 
-<ul>
-@foreach (var produit in Model)
+<table class="table table-striped table-responsive">
+    <tr>
+        <th>Code</th>
+        <th>Libelle</th>
+        <th>Stock</th>
+        <th>Prix</th>
+        <th>Categorie</th>
+    </tr>
+@foreach (Produit produit in Model)
 {
-    <li>@produit.Libelle</li>
+    <tr>
+        <td>@produit.Code</td>
+        <td>@produit.Libelle</td>
+        <td>@produit.Stock</td>
+        <td>@produit.Prix</td>
+        <td>@produit.Categorie</td>
+    </tr>
 }
-</ul>
+</table>
