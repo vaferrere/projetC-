@@ -1,4 +1,5 @@
 ﻿using BLL;
+using Metier.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,9 @@ namespace web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            Manager manager = new Manager();
+            List<Commande> commandes = manager.DernieresCommandes();
+            return View(commandes);
         }
 
         public ActionResult About()

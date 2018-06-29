@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Metier.Entities
+@model List<Commande>
+@{
     ViewBag.Title = "Accueil";
 }
 
@@ -8,5 +10,23 @@
 </div>
 
 <div class="row">
-    
+    <h4>Les 5 dernières commandes</h4>
+
+    <table class="table table-responsive table-striped">
+        <tr>
+            <th>Date</th>
+            <th>Client</th>
+            <th>Observation</th>
+        </tr>
+        @{ 
+            foreach(Commande commande in Model)
+            {
+                <tr>
+                    <td>commande.DateCommande</td>
+                    <td>commande.Client.Nom</td>
+                    <td>commande.Observation</td>
+                </tr>
+            }
+        }
+    </table>
 </div>

@@ -207,5 +207,11 @@ namespace BLL
             StatutCommand sc = new StatutCommand(contexte);
             sc.Supprimer(id);
         }
+
+        public List<Commande> DernieresCommandes()
+        {
+            CommandeQuery cq = new CommandeQuery(contexte);
+            return cq.getLastFive().ToList();
+        }
     }
 }

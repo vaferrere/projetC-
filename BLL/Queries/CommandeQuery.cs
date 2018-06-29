@@ -26,5 +26,10 @@ namespace BLL.Queries
         {
             return contexte.Commandes.Where(c => c.Id == id);
         }
+
+        public IQueryable<Commande> getLastFive()
+        {
+            return contexte.Commandes.OrderByDescending(c => c.DateCommande).Take(5);
+        }
     }
 }
