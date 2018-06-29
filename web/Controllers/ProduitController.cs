@@ -51,7 +51,7 @@ namespace web.Controllers
         public ActionResult Edit(int id)
         {
             Manager manager = new Manager();
-            Produit produit = manager.getProduitById(id);
+            Produit produit = manager.GetProduit(id);
             return View("Ajout", produit);
         }
 

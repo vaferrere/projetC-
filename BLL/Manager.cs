@@ -56,6 +56,12 @@ namespace BLL
             return pq.GetAll().ToList();
         }
 
+        public Categorie GetCategorie(int id)
+        {
+            CategorieQuery pq = new CategorieQuery(contexte);
+            return (Categorie) pq.GetById(id);
+        }
+
         public int AjouterCategorie(Categorie categorie)
         {
             CategorieCommand cc = new CategorieCommand(contexte);
@@ -139,7 +145,7 @@ namespace BLL
             return pq.GetAll().ToList();
         }
 
-        public Produit GetProduitById(int id)
+        public Produit GetProduit(int id)
         {
             ProduitQuery pq = new ProduitQuery(contexte);
             return (Produit)pq.GetById(id);
