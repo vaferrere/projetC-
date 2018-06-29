@@ -1,10 +1,10 @@
 ﻿@model Metier.Entities.Produit
-    
-<h2>Ajout d'un produit</h2>
-@using (Html.BeginForm()) 
+
+<h2>Modification d'un produit</h2>
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-        
+
     <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -15,7 +15,7 @@
                 @Html.ValidationMessageFor(model => model.Code, "", new { @class = "text-danger" })
             </div>
         </div>
-    
+
         <div class="form-group">
             @Html.LabelFor(model => model.Libelle, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -23,7 +23,7 @@
                 @Html.ValidationMessageFor(model => model.Libelle, "", new { @class = "text-danger" })
             </div>
         </div>
-    
+
         <div class="form-group">
             @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -31,7 +31,7 @@
                 @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
             </div>
         </div>
-    
+
         <div class="form-group">
             @Html.LabelFor(model => model.Actif, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="form-group">
             @Html.LabelFor(model => model.Stock, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -49,7 +49,7 @@
                 @Html.ValidationMessageFor(model => model.Stock, "", new { @class = "text-danger" })
             </div>
         </div>
-    
+
         <div class="form-group">
             @Html.LabelFor(model => model.Prix, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -57,7 +57,7 @@
                 @Html.ValidationMessageFor(model => model.Prix, "", new { @class = "text-danger" })
             </div>
         </div>
-    
+
         <div class="form-group">
             @Html.LabelFor(model => model.CategorieId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -65,15 +65,15 @@
                 @Html.ValidationMessageFor(model => model.CategorieId, "", new { @class = "text-danger" })
             </div>
         </div>
-    
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Ajouter" class="btn btn-default" />
+                <input type="submit" value="Modifier" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
-    
+
 <div>
     @Html.ActionLink("Retour à la liste", "Index")
 </div>

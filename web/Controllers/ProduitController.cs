@@ -21,7 +21,9 @@ namespace web.Controllers
         // GET: Produit/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Manager manager = new Manager();
+            Produit produit = manager.GetProduit(id);
+            return View(produit);
         }
 
         // GET: Produit/Create
@@ -52,12 +54,12 @@ namespace web.Controllers
         {
             Manager manager = new Manager();
             Produit produit = manager.GetProduit(id);
-            return View("Ajout", produit);
+            return View(produit);
         }
 
         // POST: Produit/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, Produit produit)
+        public ActionResult Edit(Produit produit)
         {
             try
             {
@@ -67,7 +69,7 @@ namespace web.Controllers
             }
             catch
             {
-                return View("Ajout");
+                return View(produit.Id);
             }
         }
 

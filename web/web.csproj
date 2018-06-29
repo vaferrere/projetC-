@@ -272,11 +272,14 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Produit\Index.cshtml" />
-    <Content Include="Views\Produit\Ajout.cshtml" />
+    <Content Include="Views\Produit\Ajout_save.cshtml" />
     <Content Include="Views\Categorie\Ajout.cshtml" />
     <Content Include="Views\Categorie\Index.cshtml" />
     <Content Include="Views\Categorie\Edit.cshtml" />
     <Content Include="Views\Categorie\Details.cshtml" />
+    <Content Include="Views\Produit\Edit.cshtml" />
+    <Content Include="Views\Produit\Ajout.cshtml" />
+    <Content Include="Views\Produit\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

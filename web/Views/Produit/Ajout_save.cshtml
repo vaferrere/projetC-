@@ -1,0 +1,44 @@
+﻿@using Metier.Entities
+@model Produit
+
+@{
+    ViewBag.Title = "Ajout";
+}
+
+<h2>Ajout d'un produit</h2>
+@using (Html.BeginForm(FormMethod.Post))
+
+{
+<fieldset>
+    <legend>Ajout d'un produit</legend>
+    @Html.Label("Code")
+    @Html.TextBoxFor(model => model.Code)
+
+    <br />
+
+    @Html.Label("Libelle")
+    @Html.TextBoxFor(model => model.Libelle)
+
+    <br />
+
+    @Html.Label("Description")
+    @Html.TextAreaFor(model => model.Description)
+
+    <br />
+
+    @Html.Label("Actif")
+    @Html.RadioButtonFor(model => model.Actif, true)
+    
+    <br />
+
+    @Html.Label("Stock")
+    @Html.TextBoxFor(model => model.Stock)
+    
+    <br />
+
+    @Html.Label("Prix")
+    @Html.TextBoxFor(model => model.Prix)
+
+    <input type="submit" value="Ajouter"/>
+</fieldset>
+}

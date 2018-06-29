@@ -148,7 +148,7 @@ namespace BLL
         public Produit GetProduit(int id)
         {
             ProduitQuery pq = new ProduitQuery(contexte);
-            return (Produit)pq.GetById(id);
+            return pq.GetById(id).FirstOrDefault();
         }
         
         public int AjouterProduit(Produit produit)
