@@ -59,7 +59,7 @@ namespace BLL
         public Categorie GetCategorie(int id)
         {
             CategorieQuery pq = new CategorieQuery(contexte);
-            return (Categorie) pq.GetById(id);
+            return pq.GetById(id).FirstOrDefault();
         }
 
         public int AjouterCategorie(Categorie categorie)

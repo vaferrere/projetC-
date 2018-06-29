@@ -1,17 +1,21 @@
-﻿@{
-    Layout = null;
+﻿@using Metier.Entities
+@model Categorie
+
+<h2>Modification d'une catégorie</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <div>
+            @Html.LabelFor(model => model.Libelle)
+            @Html.TextBoxFor(model => model.Libelle)
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Actif)
+            @Html.CheckBoxFor(model => model.Actif, true)
+        </div>
+       
+        <input type="submit" value="Modifier" />
+    </fieldset>
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>

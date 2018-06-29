@@ -52,12 +52,12 @@ namespace web.Controllers
         {
             Manager manager = new Manager();
             Categorie categorie = manager.GetCategorie(id);
-            return View("Ajout", categorie);
+            return View(categorie);
         }
 
         // POST: Categorie/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, Categorie categorie)
+        public ActionResult Edit(Categorie categorie)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace web.Controllers
             }
             catch
             {
-                return View("Ajout");
+                return View();
             }
         }
 

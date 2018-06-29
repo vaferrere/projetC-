@@ -4,11 +4,18 @@
 <h2>Ajout d'une catégorie</h2>
 @using (Html.BeginForm())
 {
-    <fieldset>
+<fieldset>
+    <div>
+        @Html.LabelFor(model => model.Libelle)
         @Html.TextBoxFor(model => model.Libelle)
-        @Html.RadioButtonFor(model => model.Actif, true)
-        <input type="submit" value="Ajouter" />
-    </fieldset>
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Actif)
+        @Html.CheckBoxFor(model => model.Actif, true)
+    </div>
+
+    <input type="submit" value="Ajouter" />
+</fieldset>
 }
 
 
