@@ -21,7 +21,9 @@ namespace web.Controllers
         // GET: Categorie/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Manager manager = new Manager();
+            Categorie categorie = manager.GetCategorie(id);
+            return View(categorie);
         }
 
         // GET: Categorie/Create

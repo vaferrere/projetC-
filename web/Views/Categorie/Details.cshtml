@@ -1,0 +1,28 @@
+﻿@using Metier.Entities
+@model Categorie
+@{
+    ViewBag.Title = "Détails";
+}
+
+<h2>Détails</h2>
+
+<table class="table table-responsive">
+    <tr>
+        <th>Libelle</th>
+        <th>Active</th>
+    </tr>
+    <tr>
+        <td>@Model.Libelle</td>
+        @{
+            if(Model.Actif)
+            {
+                <td>Oui</td>
+            } else
+            {
+                <td>Non</td>
+            }
+        }
+    </tr>
+</table>
+
+@Html.ActionLink("Retour à la liste", "Index")

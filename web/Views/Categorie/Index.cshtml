@@ -16,8 +16,20 @@
     {
     <tr>
         <td>@categorie.Libelle</td>
-        <td>@categorie.Actif</td>
-        <td><div>@Html.ActionLink("Modifier", "Edit", "Categorie", new { id = @categorie.Id }, null)</div></td>
+        @{
+            if (categorie.Actif)
+            {
+                <td>Oui</td>
+            }
+            else
+            {
+                <td>Non</td>
+            }
+        }
+        <td>
+            <div>@Html.ActionLink("Modifier", "Edit", "Categorie", new { id = @categorie.Id }, null)</div>
+            <div>@Html.ActionLink("Détails", "Details", "Categorie", new { id = @categorie.Id }, null)</div>
+        </td>
     </tr>
     }
 </table>   
