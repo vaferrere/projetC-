@@ -24,6 +24,18 @@ namespace web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Produit", action = "Liste", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Ajout",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Produit", action = "Ajout" }
+            );
+
+            routes.MapRoute(
+                name: "AjoutCategorie",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Categorie", action = "Create" }
+            );
         }
     }
 }

@@ -10,7 +10,7 @@ namespace BLL.Commands
 {
     class ProduitCommand
     {
-        private readonly ContextFluent contexte;
+        private ContextFluent contexte;
 
         public ProduitCommand(ContextFluent contexte)
         {
@@ -22,7 +22,8 @@ namespace BLL.Commands
             try
             {
                 contexte.Produits.Add(produit);
-                return contexte.SaveChanges();
+                int res = contexte.SaveChanges();
+                return res;
             } catch(Exception e)
             {
                 Console.WriteLine(e.Message);

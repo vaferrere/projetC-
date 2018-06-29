@@ -38,9 +38,15 @@ namespace BLL
             return pq.GetAll().ToList();
         }
 
+        public Produit getProduitById(int id)
+        {
+            ProduitQuery pq = new ProduitQuery(contexte);
+            return (Produit)pq.GetById(id);
+        }
+        
         public int AjouterProduit(Produit produit)
         {
-            if(produit.Stock < 0 || produit.Prix <= 0)
+            if(produit.Stock < 0 || produit.Prix < 0)
             {
                 throw new ArgumentOutOfRangeException();
             }
@@ -66,10 +72,43 @@ namespace BLL
             pc.Supprimer(id);
         }
 
+        public bool ProduitExist(Produit produit)
+        {
+            ProduitQuery pq = new ProduitQuery(contexte);
+            IQueryable<Produit> p = pq.GetById(produit.Id);
+
+            if (p == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         public List<Categorie> GetAllCategorie()
         {
-            CategorieQuery pq = new CategorieQuery(contexte);
-            return pq.GetAll().ToList();
+            CategorieQuery cq = new CategorieQuery(contexte);
+            return cq.GetAll().ToList();
+        }
+
+        public int AjouterCategorie(Categorie categorie)
+        {
+            CategorieCommand cc = new CategorieCommand(contexte);
+            return cc.Ajouter(categorie);
+        }
+
+        public Categorie GetCategorie(int id)
+        {
+            CategorieQuery cq = new CategorieQuery(contexte);
+            return cq.GetById(id).FirstOrDefault();
+        }
+
+        public void ModifierCategorie(Categorie categorie)
+        {
+            CategorieCommand cc = new CategorieCommand(contexte);
+            cc.Modifier(categorie);
         }
     }
 }

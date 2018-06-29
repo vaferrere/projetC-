@@ -1,0 +1,14 @@
+﻿@using Metier.Entities
+@model Categorie
+
+<h2>Ajout d'une catégorie</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        @Html.TextBoxFor(model => model.Libelle)
+        @Html.RadioButtonFor(model => model.Actif, true)
+        <input type="submit" value="Ajouter" />
+    </fieldset>
+}
+
+
