@@ -32,6 +32,107 @@ namespace BLL
             }
         }
 
+        public void PurgeDatabase()
+        {
+            CategorieCommand catC = new CategorieCommand(contexte);
+            ClientCommand cliC = new ClientCommand(contexte);
+            CommandeCommand comC = new CommandeCommand(contexte);
+            ProduitCommand proC = new ProduitCommand(contexte);
+            StatutCommand staC = new StatutCommand(contexte);
+
+            catC.Purge();
+            cliC.Purge();
+            comC.Purge();
+            proC.Purge();
+            staC.Purge();
+        }
+
+        /**
+         *  CATEGORIE
+         */
+        public List<Categorie> GetAllCategorie()
+        {
+            CategorieQuery pq = new CategorieQuery(contexte);
+            return pq.GetAll().ToList();
+        }
+
+        public int AjouterCategorie(Categorie categorie)
+        {
+            CategorieCommand cc = new CategorieCommand(contexte);
+            return cc.Ajouter(categorie);
+        }
+
+        public void ModifierCategorie(Categorie categorie)
+        {
+            CategorieCommand cc = new CategorieCommand(contexte);
+            cc.Modifier(categorie);
+        }
+
+        public void SupprimerCategorie(int id)
+        {
+            CategorieCommand cc = new CategorieCommand(contexte);
+            cc.Supprimer(id);
+        }
+
+
+        /**
+         *  CLIENT
+         */
+        public List<Client> GetAllClient()
+        {
+            ClientQuery cq = new ClientQuery(contexte);
+            return cq.GetAll().ToList();
+        }
+
+        public int AjouterClient(Client client)
+        {
+            ClientCommand cc = new ClientCommand(contexte);
+            return cc.Ajouter(client);
+        }
+
+        public void ModifierClient(Client client)
+        {
+            ClientCommand cc = new ClientCommand(contexte);
+            cc.Modifier(client);
+        }
+
+        public void SupprimerClient(int id)
+        {
+            ClientCommand cc = new ClientCommand(contexte);
+            cc.Supprimer(id);
+        }
+
+        /**
+         *  COMMANDE
+         */
+        public List<Commande> GetAllCommande()
+        {
+            CommandeQuery cq = new CommandeQuery(contexte);
+            return cq.GetAll().ToList();
+        }
+
+        public int AjouterCommande(Commande commande)
+        {
+            CommandeCommand cc = new CommandeCommand(contexte);
+            return cc.Ajouter(commande);
+        }
+
+        public void ModifierCommande(Commande commande)
+        {
+            CommandeCommand cc = new CommandeCommand(contexte);
+            cc.Modifier(commande);
+        }
+
+        public void SupprimerCommande(int id)
+        {
+            CommandeCommand cc = new CommandeCommand(contexte);
+            cc.Supprimer(id);
+        }
+
+
+        /**
+         *  PRODUIT
+         */
         public List<Produit> GetAllProduit()
         {
             ProduitQuery pq = new ProduitQuery(contexte);
@@ -46,7 +147,8 @@ namespace BLL
         
         public int AjouterProduit(Produit produit)
         {
-            if(produit.Stock < 0 || produit.Prix < 0)
+            if (produit.Stock < 0 || produit.Prix <= 0)
+
             {
                 throw new ArgumentOutOfRangeException();
             }
@@ -72,58 +174,32 @@ namespace BLL
             pc.Supprimer(id);
         }
 
-        public bool ProduitExist(Produit produit)
-        {
-            ProduitQuery pq = new ProduitQuery(contexte);
-            IQueryable<Produit> p = pq.GetById(produit.Id);
 
-            if (p == null)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-
-        public List<Categorie> GetAllCategorie()
+        /**
+         *  STATUT
+         */
+        public List<Statut> GetAllStatut()
         {
-            CategorieQuery cq = new CategorieQuery(contexte);
+            StatutQuery cq = new StatutQuery(contexte);
             return cq.GetAll().ToList();
         }
 
-        public int AjouterCategorie(Categorie categorie)
+        public int AjouterStatut(Statut statut)
         {
-            CategorieCommand cc = new CategorieCommand(contexte);
-            return cc.Ajouter(categorie);
+            StatutCommand sc = new StatutCommand(contexte);
+            return sc.Ajouter(statut);
         }
 
-        public Categorie GetCategorie(int id)
+        public void ModifierStatut(Statut statut)
         {
-            CategorieQuery cq = new CategorieQuery(contexte);
-            return cq.GetById(id).FirstOrDefault();
+            StatutCommand sc = new StatutCommand(contexte);
+            sc.Modifier(statut);
         }
 
-        public void ModifierCategorie(Categorie categorie)
+        public void SupprimerStatut(int id)
         {
-            CategorieCommand cc = new CategorieCommand(contexte);
-            cc.Modifier(categorie);
-        }
-
-        public void PurgeDatabase()
-        {
-            CategorieCommand catC = new CategorieCommand(contexte);
-            ClientCommand cliC    = new ClientCommand(contexte);
-            CommandeCommand comC  = new CommandeCommand(contexte);
-            ProduitCommand proC   = new ProduitCommand(contexte);
-            StatutCommand staC    = new StatutCommand(contexte);
-
-            catC.Purge();
-            cliC.Purge();
-            comC.Purge();
-            proC.Purge();
-            staC.Purge();
+            StatutCommand sc = new StatutCommand(contexte);
+            sc.Supprimer(id);
         }
     }
 }
