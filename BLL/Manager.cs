@@ -38,7 +38,7 @@ namespace BLL
             return pq.GetAll().ToList();
         }
 
-        public Produit getProduitById(int id)
+        public Produit GetProduitById(int id)
         {
             ProduitQuery pq = new ProduitQuery(contexte);
             return (Produit)pq.GetById(id);

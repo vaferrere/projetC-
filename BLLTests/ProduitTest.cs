@@ -57,15 +57,15 @@ namespace BLLTests
         {
             Categorie cat = new Categorie("cat test", true);
             Produit produit = new Produit(1, "test_produit", " je suis un produit de test", true, 42, 42.42d, cat);
+            Produit savedProduit = ObjectCopier.Clone<Produit>(produit);
 
             manager.AjouterProduit(produit);
-            Produit dbProduit = manager.GetAllProduit()[0];
-            Produit mProduit = (Produit)dbProduit.Clone();
-            mProduit.Libelle = "je suis un libelle modifié";
-            manager.ModifierProduit(mProduit);
+            produit = manager.GetAllProduit()[0];
+            produit.Libelle = "je suis un libelle modifié";
+            manager.ModifierProduit(produit);
 
-            dbProduit = manager.GetAllProduit()[0];
-            Assert.AreNotEqual(produit, dbProduit);
+            produit = manager.GetAllProduit()[0];
+            Assert.AreNotEqual(produit, savedProduit);
         }
     }
 }
