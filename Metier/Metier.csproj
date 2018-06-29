@@ -98,6 +98,13 @@
     <Content Include="Bdd.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="BDDTests.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BDDTests_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BDDTests.mdf</DependentUpon>
+    </Content>
     <Content Include="Bdd_log.ldf">
       <DependentUpon>Bdd.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

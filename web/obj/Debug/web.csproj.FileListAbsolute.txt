@@ -107,6 +107,7 @@ U:\C#\Omazone.Vincent.Ferrere\web\bin\MainApplication.exe
 U:\C#\Omazone.Vincent.Ferrere\web\bin\MainApplication.pdb
 U:\C#\Omazone.Vincent.Ferrere\web\bin\Bdd.mdf
 U:\C#\Omazone.Vincent.Ferrere\web\bin\Bdd_log.ldf
+<<<<<<< HEAD
 D:\Documents\IUT\licence\dotNET\projetC-\web\bin\ApplicationInsights.config
 D:\Documents\IUT\licence\dotNET\projetC-\web\bin\roslyn\csc.exe
 D:\Documents\IUT\licence\dotNET\projetC-\web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -221,3 +222,7 @@ D:\Documents\IUT\licence\dotNET\projetC-\web\obj\Debug\web.csproj.CoreCompileInp
 D:\Documents\IUT\licence\dotNET\projetC-\web\obj\Debug\web.csproj.CopyComplete
 D:\Documents\IUT\licence\dotNET\projetC-\web\obj\Debug\web.dll
 D:\Documents\IUT\licence\dotNET\projetC-\web\obj\Debug\web.pdb
+=======
+U:\C#\Omazone.Vincent.Ferrere\web\bin\BDDTests.mdf
+U:\C#\Omazone.Vincent.Ferrere\web\bin\BDDTests_log.ldf
+>>>>>>> 9946189fb6acbd90ee4026e9a0f727e55057e5c4

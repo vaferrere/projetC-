@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Metier.Entities
 {
-    public class Produit
+    public class Produit : ICloneable
     {
         public int Id { get; set; }
         public int Code { get; set; }
@@ -28,6 +28,11 @@ namespace Metier.Entities
             Stock = stock;
             Prix = prix;
             Categorie = categorie;
+        }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
         }
     }
 }

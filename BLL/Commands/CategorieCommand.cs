@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Commands
 {
-    class CategorieCommand
+    public class CategorieCommand
     {
         private readonly ContextFluent contexte;
 
@@ -46,6 +46,11 @@ namespace BLL.Commands
             }
 
             contexte.SaveChanges();
+        }
+
+        public void Purge()
+        {
+            contexte.Database.ExecuteSqlCommand("delete from APP_CATEGORIE");
         }
     }
 }

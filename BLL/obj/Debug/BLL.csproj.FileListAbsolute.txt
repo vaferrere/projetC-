@@ -13,6 +13,7 @@ U:\C#\Omazone.Vincent.Ferrere\BLL\obj\Debug\BLL.dll
 U:\C#\Omazone.Vincent.Ferrere\BLL\obj\Debug\BLL.pdb
 U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\Bdd.mdf
 U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\Bdd_log.ldf
+<<<<<<< HEAD
 D:\Documents\IUT\licence\dotNET\projetC-\BLL\bin\Debug\Bdd.mdf
 D:\Documents\IUT\licence\dotNET\projetC-\BLL\bin\Debug\Bdd_log.ldf
 D:\Documents\IUT\licence\dotNET\projetC-\BLL\bin\Debug\BLL.dll.config
@@ -30,3 +31,7 @@ D:\Documents\IUT\licence\dotNET\projetC-\BLL\obj\Debug\BLL.csproj.CoreCompileInp
 D:\Documents\IUT\licence\dotNET\projetC-\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Documents\IUT\licence\dotNET\projetC-\BLL\obj\Debug\BLL.dll
 D:\Documents\IUT\licence\dotNET\projetC-\BLL\obj\Debug\BLL.pdb
+=======
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\BDDTests.mdf
+U:\C#\Omazone.Vincent.Ferrere\BLL\bin\Debug\BDDTests_log.ldf
+>>>>>>> 9946189fb6acbd90ee4026e9a0f727e55057e5c4
