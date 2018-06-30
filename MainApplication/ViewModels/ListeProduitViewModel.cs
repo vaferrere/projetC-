@@ -1,4 +1,5 @@
 ﻿using BLL;
+using MainApplication.Converter;
 using Metier.Entities;
 using System;
 using System.Collections.Generic;
@@ -38,40 +39,12 @@ namespace MainApplication.ViewModels
             Manager manager = new Manager();
             listeProduit = new ObservableCollection<ProduitViewModel>();
 
-            Categorie mCategorie = new Categorie();
-            mCategorie.Actif = true;
-            mCategorie.Id = 0;
-            mCategorie.Libelle = "trop bien";
-
-            ProduitViewModel mProduitViewModel = new ProduitViewModel();
-            mProduitViewModel.Id = 02;
-            mProduitViewModel.Libelle = "je suis le libelle";
-            mProduitViewModel.Prix = 0.45;
-            mProduitViewModel.Stock = 42;
-            mProduitViewModel.Actif = true;
-            mProduitViewModel.Categorie = mCategorie;
-            mProduitViewModel.Code = 45235;
-            mProduitViewModel.Description = "je suis un objet de test";
-
-            listeProduit.Add(mProduitViewModel);
-            manager.AjouterProduit(Converter.ProduitConverter.ProduitViewModelToProduit(mProduitViewModel));
-            mCategorie = new Categorie();
-            mCategorie.Actif = true;
-            mCategorie.Id = 0;
-            mCategorie.Libelle = "trop nul";
-
-            mProduitViewModel = new ProduitViewModel();
-            mProduitViewModel.Id = 03;
-            mProduitViewModel.Libelle = "je suis le libelle2";
-            mProduitViewModel.Prix = 0.75;
-            mProduitViewModel.Stock = 81;
-            mProduitViewModel.Actif = false;
-            mProduitViewModel.Categorie = mCategorie;
-            mProduitViewModel.Code = 54915;
-            mProduitViewModel.Description = "je suis un objet de test2";
-
-            listeProduit.Add(mProduitViewModel);
-            manager.AjouterProduit(Converter.ProduitConverter.ProduitViewModelToProduit(mProduitViewModel));
+            List<Produit> listDb = manager.GetAllProduit();
+            foreach (Produit produit in listDb)
+            {
+                ProduitViewModel pvm = ProduitConverter.ProduitToProduitViewModel(produit);
+                listeProduit.Add(pvm);
+            }
         }
 
     }
