@@ -23,12 +23,15 @@ namespace web.Controllers
         {
             Manager manager = new Manager();
             Produit produit = manager.GetProduit(id);
+            ViewBag.Categorie = manager.GetCategorie(produit.CategorieId);
             return View(produit);
         }
 
         // GET: Produit/Create
         public ActionResult Ajout()
         {
+            Manager manager = new Manager();
+            ViewBag.Categories = manager.GetAllCategorie();
             return View();
         }
 
@@ -39,12 +42,14 @@ namespace web.Controllers
             try
             {
                 Manager manager = new Manager();
+                produit.Categorie = manager.GetCategorie(produit.CategorieId);
                 manager.AjouterProduit(produit);
-
                 return RedirectToAction("Index");
             }
             catch
             {
+                Manager manager = new Manager();
+                ViewBag.Categories = manager.GetAllCategorie();
                 return View();
             }
         }
@@ -54,6 +59,7 @@ namespace web.Controllers
         {
             Manager manager = new Manager();
             Produit produit = manager.GetProduit(id);
+            ViewBag.Categories = manager.GetAllCategorie();
             return View(produit);
         }
 

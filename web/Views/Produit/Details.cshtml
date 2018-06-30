@@ -13,6 +13,7 @@
         <th>Description</th>
         <th>Prix</th>
         <th>Stock</th>
+        <th>Catégorie</th>
         <th>Actif</th>
     </tr>
     <tr>
@@ -21,6 +22,7 @@
         <td>@Model.Description</td>
         <td>@Model.Prix</td>
         <td>@Model.Stock</td>
+        <td>@ViewBag.Categorie.Libelle</td>
         @{
             if (Model.Actif)
             {
