@@ -150,7 +150,13 @@ namespace BLL
             ProduitQuery pq = new ProduitQuery(contexte);
             return pq.GetById(id).FirstOrDefault();
         }
-        
+
+        public Produit GetProduitByCode(int code)
+        {
+            ProduitQuery pq = new ProduitQuery(contexte);
+            return pq.GetByCode(code).FirstOrDefault();
+        }
+
         public int AjouterProduit(Produit produit)
         {
             if (produit.Stock < 0 || produit.Prix <= 0)

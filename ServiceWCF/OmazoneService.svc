@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ServiceWCF.OmazoneService" CodeBehind="OmazoneService.svc.cs" %>

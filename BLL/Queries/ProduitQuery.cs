@@ -26,5 +26,10 @@ namespace BLL.Queries
         {
             return contexte.Produits.Where(c => c.Id == id);
         }
+
+        public IQueryable<Produit> GetByCode(int code)
+        {
+            return contexte.Produits.Where(c => c.Code == code);
+        }
     }
 }

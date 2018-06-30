@@ -39,6 +39,7 @@ namespace web.Controllers
             try
             {
                 Manager manager = new Manager();
+                produit.Categorie = manager.GetCategorie(produit.CategorieId);
                 manager.AjouterProduit(produit);
 
                 return RedirectToAction("Index");
